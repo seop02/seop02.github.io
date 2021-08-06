@@ -1,6 +1,27 @@
 ---
-layout: me
-title: me
+layout: default
+title: "About Me"
+tags: about
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis placerat enim nec cursus. Ut et elit congue, facilisis dui id, efficitur velit. Integer faucibus velit varius arcu consectetur aliquam. Sed dui ante, euismod non malesuada vel, suscipit vel elit. Nullam tempor vehicula urna, sed dignissim ligula hendrerit in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin et nisi eget nunc vehicula posuere. Nam elementum finibus auctor. Suspendisse a mauris et arcu molestie egestas sed et dolor. Nullam ut est tristique, iaculis tortor non, viverra felis. Praesent a tincidunt tellus, eget congue eros. Mauris non libero nec ipsum ultricies tincidunt sit amet nec ante. Duis molestie sem at ligula rhoncus viverra. Pellentesque sit amet tortor euismod, rhoncus lacus a, sodales odio. Proin ac convallis ipsum. Cras tincidunt mollis consequat.
+## Introducing Myself
+
+I am Wooseop Hwang. I am undergraduate student in the University of Oxford studying physics. 
+
+
+## Education
+
+   - United World College in South East Asia East campus, class of 2020
+   - International Baccalaureate Diploma
+   - Bilingual Diploma
+   - University of Oxford, physics, class of 2024
+
+## Sports
+
+   - Singapore Novices Fencing Championship Epee Team - Bronze
+   - Singapore Cadets Fencing Championship Epee Team - Silver
+
+
+
+
+[[Top]](#top)
