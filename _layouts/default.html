@@ -45,14 +45,14 @@
 			{% unless page.date%}
 				<ul>
 					{% assign posts = site.posts | sort %}
-					{% for post in site.posts %}
+					{% for post in posts %}
 					<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
 					{% endfor %}
 				</ul>
 			{% else %}
 				<ul>
 					{% assign posts = site.posts | sort %}
-					{% for post in site.posts %}
+					{% for post in posts %}
 					<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
 					{% endfor %}
 				</ul>
