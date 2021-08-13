@@ -35,6 +35,7 @@
 			<ul>
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
+					{{ tag }}
 					{% if tag.title == 'about'}
 						<li><a href="/me" title="about"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
 					{% else %}
