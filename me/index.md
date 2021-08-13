@@ -8,7 +8,6 @@ tags: about
 
 I am Wooseop Hwang. I am undergraduate student in the University of Oxford studying physics. 
 
-
 ## Education
 
    - United World College in South East Asia East campus, class of 2020
@@ -20,7 +19,7 @@ I am Wooseop Hwang. I am undergraduate student in the University of Oxford study
 
    - Singapore Novices Fencing Championship Epee Team - Bronze
    - Singapore Cadets Fencing Championship Epee Team - Silver
-
+   - Singapore Cadets Fencing Championship Epee Team - Silver
 
 
 
