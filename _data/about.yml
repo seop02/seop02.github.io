@@ -1,2 +1,5 @@
 about:
   name: about
+
+project:
+  name: project
