@@ -1,25 +1,8 @@
-permalink: /:year:month:day/:title
-url: #Your url here
-baseurl: /project
-
-# variables
-name: Wooseop's Personal Website
-description: 
-google_verification: null
-
+# Site
+name: Wooseop Hwang
+description: Quantitative Researcher — high-frequency trading and market microstructure.
+url: https://seop02.github.io
+baseurl: ""
 
 # File management
-include: [".htaccess"]
 exclude: ["README.md", "LICENSE"]
-
-# Sass
-sass:
-  style: :compressed
-  sass_dir: _sass
-
-# Markdown
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    disable : true

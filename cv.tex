@@ -1,0 +1,175 @@
+% Welcome to the simple Undergraduate Complexity Research CV-resume template!
+% Please delete any sections that do not apply to your past experiences. We do not expect that applicants will have itmes for all of the sections included here. You can also rename or revise sections to best fit with your personal accomplishments.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage{baskervillef}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \it\vspace{3pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+
+\begin{center}
+    {\LARGE \textbf{WOOSEOP HWANG}} \\ \vspace{6pt}
+    \small
+    \href{mailto:useop02@gmail.com}{useop02@gmail.com} ~\textbar~
+    \href{https://seop02.github.io}{seop02.github.io} ~\textbar~
+    \href{https://github.com/seop02}{github.com/seop02} ~\textbar~
+    \href{https://scholar.google.com/citations?user=iEoPjuoAAAAJ}{Google Scholar}
+\end{center}
+
+%-----------EDUCATION-----------
+% Please list your current institution first and then past schools in reverse chronology. No need for GPA, etc. You do not need to include high school but may do so if there are accomplishments you would like to highlight.
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {University of Oxford}{Oct 2020 -- Jun 2024}
+        {Master of Mathematics and Theoretical Physics (MMathPhys)}{Oxfordshire, United Kingdom}
+        \resumeItemListStart
+          \resumeItem{First Class Honours, with Distinction.}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- Experience -----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Qraft Technologies}{Aug 2024 -- Present}
+    {Quantitative \& AI Researcher (Alternative Military Service)}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Developed and managed live high-frequency ETF arbitrage strategies in production for Korean markets, spanning short-horizon signal modelling through to low-latency execution.}
+      \resumeItem{Developed reinforcement-learning--based order execution algorithms, designing reward shaping and state representations to optimize market impact under partial observability.}
+      \resumeItem{Built end-to-end systematic trading algorithms bridging deep RL research and production deployment, with emphasis on sample efficiency and robustness to regime shifts.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Preparing Ground and Excited States Using Adiabatic CoVaR}{2024 -- 2025}
+      {First-author, with Prof. B\'alint Koczor (University of Oxford)}{Oxford, UK}
+      \resumeItemListStart
+        \resumeItem{Developed a hybrid quantum-classical algorithm for preparing ground and excited eigenstates of target Hamiltonians, addressing the warm-start limitation of CoVaR via adiabatic Hamiltonian morphing. Published in \href{https://iopscience.iop.org/article/10.1088/1367-2630/adb173}{\textit{New Journal of Physics} (2025)}.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Generalized Gaussian Temporal Difference Error for Uncertainty-aware Reinforcement Learning}{2024}
+    {Co-author, with S. Kim, J. Lee, N. Cho, S. Han (Qraft Technologies)}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Proposed a generalized-Gaussian model of temporal-difference error capturing higher-order moments (kurtosis), improving the estimation of aleatoric and epistemic uncertainty in deep reinforcement learning. \href{https://arxiv.org/abs/2408.02295}{arXiv:2408.02295}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Quantum-Inspired Classification via Efficient Simulation of Helstrom Measurement}{2023 -- 2024}
+    {First-author, with Prof. Daniel K. Park (Yonsei), I. F. Araujo, C. Blank}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Derived an efficient simulation of the Helstrom Quantum Centroid classifier for arbitrary data-copy counts, revealing that copy number is a hyperparameter rather than a monotonic improvement and enabling datasets larger than the underlying Hilbert space dimension. \href{https://arxiv.org/abs/2403.15308}{arXiv:2403.15308}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------AWARDS & HONORS-----------
+\section{Awards \& Honors} 
+% This section can include academic achievements – things like scholarships, Dean's list, honors societies – as well as recognition in your community - community service, religious study, volunteerism, military service, or anything else. You can remove or add sections as needed.
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Best Student Poster Award}, Asia Quantum Information Science Conference (AQIS) \hfill 2024}
+  \resumeItem{\textbf{Fitzgerald Prize}, Exeter College, University of Oxford \hfill 2021, 2024}
+  \resumeItem{\textbf{East Scholarship}, Exeter College, University of Oxford \hfill 2020--2024}
+  \resumeItem{\textbf{First Place}, South East Asia Mathematics Competition \hfill 2020}
+\resumeSubHeadingListEnd
+
+%-----------TALKS & PRESENTATIONS-----------
+\section{Talks \& Presentations}
+\resumeSubHeadingListStart
+  \resumeItem{Poster presentations: Asia Quantum Information Science Conference (AQIS); Quantum Techniques in Machine Learning (QTML) \hfill 2024}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{Programming}: Python (Advanced), C++ (Intermediate), Rust (Intermediate), \LaTeX \\
+     \textbf{Areas}: Quantitative Research, Machine Learning / Reinforcement Learning, Quantum Computing \\
+     \textbf{Languages}: English (Fluent), Korean (Native)
+    }
+ \end{itemize}
+ 
+ 
+ 
+
+
+\end{document}
