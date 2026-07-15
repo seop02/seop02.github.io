@@ -53,6 +53,7 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\newcommand{\resumeProject}[1]{\vspace{1pt}\item[]{\textbf{#1}}\vspace{-4pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -77,13 +78,13 @@
 
     \resumeSubheading
         {옥스퍼드 대학교}{2023.10 -- 2024.06}
-        {수리·이론물리학 석사 (MMathPhys)}{영국 옥스퍼드셔}
+        {수리·이론물리학 석사 (MMathPhys)}{}
         \resumeItemListStart
           \resumeItem{First Class Honours(GPA 4.0 equivalent)}
         \resumeItemListEnd
     \resumeSubheading
         {옥스퍼드 대학교}{2020.10 -- 2023.06}
-        {물리학 학사 (BA)}{영국 옥스퍼드셔}
+        {물리학 학사 (BA)}{}
         \resumeItemListStart
           \resumeItem{First Class Honours(GPA 4.0 equivalent), Distinction}
         \resumeItemListEnd
@@ -96,25 +97,36 @@
   \resumeSubheading
     {Qraft Technologies}{2024.08 -- 재직 중}
     {AI/Quant Researcher (전문연구요원)}{서울}
+    \resumeProject{강화학습 기반 주문 집행 모델 연구}
     \resumeItemListStart
-      \resumeItem{다양한 시장에서 적용될 수 있는 강화학습 기반 주문 집행 모델 연구 및 개발}
-      \resumeItem{연구 단계의 심층 강화학습 모델을 실서비스까지 잇는 end-to-end 파이프라인 구축. 환경 시뮬레이션, 상태 표현 설계, 보상 설계, 모델 학습 및 평가까지 담당.}
-      \resumeItem{국내 시장 대상 고빈도 ETF 차익거래 전략을 실거래로 개발·운용}
+      \resumeItem{Rust·Python 기반 시뮬레이터를 개발해 최적화된 모델 학습 환경 구축}
+      \resumeItem{PPO 기반 Deep Reinforcement Learning 모델 연구}
+      \resumeItem{Hindsight Learning 기반 reward function 개발로 credit assignment 및 학습 효율 개선, 기존 대비 성능 20\% 향상}
+      \resumeItem{Model architecture 및 state encoder 개선으로 state representation 고도화, 기존 대비 15\% 향상}
+    \resumeItemListEnd
+    \resumeProject{국내시장 차익거래 연구}
+    \resumeItemListStart
+      \resumeItem{C++ 기반 고빈도매매(HFT) 백테스터 개발}
+      \resumeItem{ETF 이론가 계산 및 주문 시스템 개선으로 기존 차익거래 전략의 capacity 100\% 이상 향상}
+      \resumeItem{실시간 채권 가격 추정 알고리즘 도입으로 차익거래 유니버스 확장}
     \resumeItemListEnd
   \resumeSubheading
     {Data cybernetics ssc GmbH}{2023.10 -- 2024.03}
     {연구원}{독일 · 원격 근무}
+    \resumeProject{사내 독자 Quantum State Preparation 알고리즘(Q-Alchemy)의 응용 연구}
     \resumeItemListStart
-      \resumeItem{Quantum State preparation의 응용 연구 — QCNN, 포트폴리오 최적화, HHL 알고리즘 등.}
-      \resumeItem{지문 인식 문제에 Quantum-Inspired Classification 적용 연구.}
-      \resumeItem{Qiskit<->Pennylane 연동 시스템 개발}
+      \resumeItem{데이터를 양자 회로에 인코딩하는 상태 준비 단계를 low-rank 근사로 완화하는 기법을 여러 응용 문제에 적용}
+      \resumeItem{QCNN — 근사 인코딩으로 회로 깊이를 크게 줄이면서도 분류 성능이 유지되는 조건 분석}
+      \resumeItem{HHL — 입력 단계의 근사 오차가 문제의 조건수(condition number)에 따라 최종 해에서 얼마나 증폭되는지 분석}
+      \resumeItem{Portfolio Optimization — 수익률 공분산의 저차원 구조 덕분에 근사로 잘려 나가는 성분이 대부분 노이즈임을 확인}
     \resumeItemListEnd
   \resumeSubheading
     {연세대학교}{2022.12 -- 2023.08}
     {학생 연구원}{서울}
+    \resumeProject{Helstrom classifier 관련 연구}
     \resumeItemListStart
-      \resumeItem{Quantum-Inspired Classification 연구. Hyperparameter 최적화 시스템 구축 후, 다양한 데이터셋에서 Quantum-Inspired 알고리즘들이 현존하는 classical ML 모델들에 비해 우위를 갖는지 실험}
-      \resumeItem{Contextuality in Quantum circuits 관련 연구.}
+      \resumeItem{non-orthogonal 양자 상태를 가장 높은 확률로 판별하는 Helstrom measurement operator 기반 classifier를, multiple data copy 상황에서도 효율적으로 연산할 수 있는 quantum-inspired classifier로 구현}
+      \resumeItem{Hyperparameter까지 최적화한 classical ML classifier들과 다양한 데이터셋에서 성능 비교}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -149,10 +161,10 @@
 %-----------수상 및 장학-----------
 \section{수상 및 장학}
 \resumeSubHeadingListStart
-  \resumeItem{\textbf{최우수 학생 포스터상} · Asia Quantum Information Science Conference (AQIS) \hfill 2024}
-  \resumeItem{\textbf{Fitzgerald Prize} · Exeter College, 옥스퍼드 대학교 \hfill 2021, 2024}
-  \resumeItem{\textbf{East Scholarship} · Exeter College, 옥스퍼드 대학교 \hfill 2020--2024}
-  \resumeItem{\textbf{South East Asia Mathematics Competition 1위} \hfill 2020}
+  \resumeItem{\textbf{Best Student Poster Award} · Asia Quantum Information Science Conference (AQIS) \hfill 2024}
+  \resumeItem{\textbf{Fitzgerald Prize} · Exeter College, University of Oxford \hfill 2021, 2024}
+  \resumeItem{\textbf{East Scholarship} · Exeter College, University of Oxford \hfill 2020--2024}
+  \resumeItem{\textbf{South East Asia Mathematics Competition 1st Place} \hfill 2020}
 \resumeSubHeadingListEnd
 
 %-----------발표-----------
