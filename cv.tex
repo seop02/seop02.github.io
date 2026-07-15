@@ -54,7 +54,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.68\textwidth}@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & #2 \\
       \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-10pt}
@@ -93,8 +93,14 @@
 \resumeSubHeadingListStart
 
     \resumeSubheading
-        {University of Oxford}{Oct 2020 -- Jun 2024}
+        {University of Oxford}{Oct 2023 -- Jun 2024}
         {Master of Mathematics and Theoretical Physics (MMathPhys)}{Oxfordshire, United Kingdom}
+        \resumeItemListStart
+          \resumeItem{First Class Honours.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {University of Oxford}{Oct 2020 -- Jun 2023}
+        {Bachelor of Arts in Physics (BA)}{Oxfordshire, United Kingdom}
         \resumeItemListStart
           \resumeItem{First Class Honours, with Distinction.}
         \resumeItemListEnd
@@ -106,11 +112,26 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Qraft Technologies}{Aug 2024 -- Present}
-    {Quantitative \& AI Researcher (Alternative Military Service)}{Seoul, South Korea}
+    {AI/Quant Researcher (Alternative Military Service)}{Seoul, South Korea}
     \resumeItemListStart
       \resumeItem{Developed and managed live high-frequency ETF arbitrage strategies in production for Korean markets, spanning short-horizon signal modelling through to low-latency execution.}
       \resumeItem{Developed reinforcement-learning--based order execution algorithms, designing reward shaping and state representations to optimize market impact under partial observability.}
       \resumeItem{Built end-to-end systematic trading algorithms bridging deep RL research and production deployment, with emphasis on sample efficiency and robustness to regime shifts.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {data cybernetics ssc GmbH}{Oct 2023 -- Mar 2024}
+    {Researcher}{Remote, Germany}
+    \resumeItemListStart
+      \resumeItem{Investigated applications of quantum state preparation, including Quantum Convolutional Neural Networks, portfolio optimization, and the solution of linear systems via the HHL algorithm.}
+      \resumeItem{Evaluated the effectiveness of quantum-inspired classifiers on a fingerprint recognition task.}
+      \resumeItem{Developed a Python library to transpile Qiskit quantum circuits into their PennyLane equivalents.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Yonsei University}{Dec 2022 -- Aug 2023}
+    {Student Researcher}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Developed an efficient classical simulation of the Helstrom measurement for an arbitrary number of quantum state copies.}
+      \resumeItem{Investigated contextuality in quantum circuits.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
