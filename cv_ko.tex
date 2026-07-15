@@ -1,0 +1,174 @@
+% 한국어 이력서 — XeLaTeX + kotex 로 컴파일하세요.
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\usepackage{fontspec}
+\usepackage{kotex}
+\setmainfont{TeX Gyre Termes}
+\setmainhangulfont{UnBatang}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \it\vspace{3pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.68\textwidth}@{\extracolsep{\fill}}r@{}}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+
+\begin{center}
+    {\LARGE \textbf{황우섭}} \\ \vspace{6pt}
+    \small
+    \href{mailto:useop02@gmail.com}{useop02@gmail.com} ~\textbar~
+    \href{https://seop02.github.io}{seop02.github.io} ~\textbar~
+    \href{https://github.com/seop02}{github.com/seop02} ~\textbar~
+    \href{https://scholar.google.com/citations?user=iEoPjuoAAAAJ}{Google Scholar}
+\end{center}
+
+%-----------학력-----------
+\section{학력}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+        {옥스퍼드 대학교}{2023.10 -- 2024.06}
+        {수리·이론물리학 석사 (MMathPhys)}{영국 옥스퍼드셔}
+        \resumeItemListStart
+          \resumeItem{First Class Honours(GPA 4.0 equivalent)}
+        \resumeItemListEnd
+    \resumeSubheading
+        {옥스퍼드 대학교}{2020.10 -- 2023.06}
+        {물리학 학사 (BA)}{영국 옥스퍼드셔}
+        \resumeItemListStart
+          \resumeItem{First Class Honours(GPA 4.0 equivalent), Distinction}
+        \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%----------- 경력 -----------
+\section{경력}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Qraft Technologies}{2024.08 -- 재직 중}
+    {AI/Quant Researcher (전문연구요원)}{서울}
+    \resumeItemListStart
+      \resumeItem{다양한 시장에서 적용될 수 있는 강화학습 기반 주문 집행 모델 연구 및 개발}
+      \resumeItem{연구 단계의 심층 강화학습 모델을 실서비스까지 잇는 end-to-end 파이프라인 구축. 환경 시뮬레이션, 상태 표현 설계, 보상 설계, 모델 학습 및 평가까지 담당.}
+      \resumeItem{국내 시장 대상 고빈도 ETF 차익거래 전략을 실거래로 개발·운용}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Data cybernetics ssc GmbH}{2023.10 -- 2024.03}
+    {연구원}{독일 · 원격 근무}
+    \resumeItemListStart
+      \resumeItem{Quantum State preparation의 응용 연구 — QCNN, 포트폴리오 최적화, HHL 알고리즘 등.}
+      \resumeItem{지문 인식 문제에 Quantum-Inspired Classification 적용 연구.}
+      \resumeItem{Qiskit<->Pennylane 연동 시스템 개발}
+    \resumeItemListEnd
+  \resumeSubheading
+    {연세대학교}{2022.12 -- 2023.08}
+    {학생 연구원}{서울}
+    \resumeItemListStart
+      \resumeItem{Quantum-Inspired Classification 연구. Hyperparameter 최적화 시스템 구축 후, 다양한 데이터셋에서 Quantum-Inspired 알고리즘들이 현존하는 classical ML 모델들에 비해 우위를 갖는지 실험}
+      \resumeItem{Contextuality in Quantum circuits 관련 연구.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------논문-----------
+\section{논문}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Preparing Ground and Excited States Using Adiabatic CoVaR}{2024 -- 2025}
+      {First-author, with Prof. B\'alint Koczor (University of Oxford)}{Oxford, UK}
+      \resumeItemListStart
+        \resumeItem{Developed a hybrid quantum-classical algorithm for preparing ground and excited eigenstates of target Hamiltonians, addressing the warm-start limitation of CoVaR via adiabatic Hamiltonian morphing. Published in \href{https://iopscience.iop.org/article/10.1088/1367-2630/adb173}{\textit{New Journal of Physics} (2025)}.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Generalized Gaussian Temporal Difference Error for Uncertainty-aware Reinforcement Learning}{2024}
+    {Co-author, with S. Kim, J. Lee, N. Cho, S. Han (Qraft Technologies)}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Proposed a generalized-Gaussian model of temporal-difference error capturing higher-order moments (kurtosis), improving the estimation of aleatoric and epistemic uncertainty in deep reinforcement learning. \href{https://arxiv.org/abs/2408.02295}{arXiv:2408.02295}.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Quantum-Inspired Classification via Efficient Simulation of Helstrom Measurement}{2023 -- 2024}
+    {First-author, with Prof. Daniel K. Park (Yonsei), I. F. Araujo, C. Blank}{Seoul, South Korea}
+    \resumeItemListStart
+      \resumeItem{Derived an efficient simulation of the Helstrom Quantum Centroid classifier for arbitrary data-copy counts, revealing that copy number is a hyperparameter rather than a monotonic improvement and enabling datasets larger than the underlying Hilbert space dimension. \href{https://arxiv.org/abs/2403.15308}{arXiv:2403.15308}.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------수상 및 장학-----------
+\section{수상 및 장학}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{최우수 학생 포스터상} · Asia Quantum Information Science Conference (AQIS) \hfill 2024}
+  \resumeItem{\textbf{Fitzgerald Prize} · Exeter College, 옥스퍼드 대학교 \hfill 2021, 2024}
+  \resumeItem{\textbf{East Scholarship} · Exeter College, 옥스퍼드 대학교 \hfill 2020--2024}
+  \resumeItem{\textbf{South East Asia Mathematics Competition 1위} \hfill 2020}
+\resumeSubHeadingListEnd
+
+%-----------발표-----------
+\section{발표}
+\resumeSubHeadingListStart
+  \resumeItem{포스터 발표 · Asia Quantum Information Science Conference (AQIS), Quantum Techniques in Machine Learning (QTML) \hfill 2024}
+\resumeSubHeadingListEnd
+
+%-----------보유 기술-----------
+\section{보유 기술}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+     \textbf{프로그래밍} \quad Python (상급), C++ (중급), Rust (중급), \LaTeX \\
+     \textbf{전문 분야} \quad 퀀트 리서치, 머신러닝·강화학습, 양자컴퓨팅 \\
+     \textbf{언어} \quad 영어 (능통), 한국어 (모국어)
+    }
+ \end{itemize}
+
+\end{document}
