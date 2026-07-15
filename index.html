@@ -114,6 +114,20 @@
     font-size:0.9rem;
   }
   footer a{color:var(--accent);}
+
+  #lang{
+    background:none;
+    border:0;
+    padding:0;
+    font:inherit;
+    color:var(--accent);
+    cursor:pointer;
+  }
+  #lang:hover{text-decoration:underline;}
+  html[lang="ko"] body{
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    word-break:keep-all;
+  }
 </style>
 </head>
 <body>
@@ -121,44 +135,44 @@
 
   <header>
     <h1>Wooseop Hwang</h1>
-    <p class="place">Seoul, South Korea</p>
+    <p class="place" data-ko="대한민국 서울">Seoul, South Korea</p>
     <p class="links">
-      <a href="/Wooseop_Hwang_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a id="cv" href="/Wooseop_Hwang_CV.pdf" target="_blank" rel="noopener">CV</a>
       <span class="sep">·</span>
-      <a href="/Wooseop_Hwang_CV_KR.pdf" target="_blank" rel="noopener">CV (국문)</a>
-      <span class="sep">·</span>
-      <a href="mailto:useop02@gmail.com">Email</a>
+      <a href="mailto:useop02@gmail.com" data-ko="이메일">Email</a>
       <span class="sep">·</span>
       <a href="https://github.com/seop02" target="_blank" rel="noopener">GitHub</a>
       <span class="sep">·</span>
       <a href="https://scholar.google.com/citations?user=iEoPjuoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <span class="sep">·</span>
+      <button id="lang" type="button">한국어</button>
     </p>
   </header>
 
   <section id="about">
-    <h2>About</h2>
-    <p>
+    <h2 data-ko="소개">About</h2>
+    <p data-ko="크래프트 테크놀로지스에서 AI/퀀트 리서처로 일하며, 현재 전문연구요원으로 복무 중입니다. 통계 모델링과 머신러닝, 저지연 엔지니어링이 만나는 지점에서 고빈도 ETF 차익거래를 연구하며, 주로 C++와 Rust, Python을 사용합니다.">
       I am an AI/quant researcher at Qraft Technologies, currently serving in the South Korean
       alternative military service program. My work focuses on high-frequency ETF
       arbitrage, at the intersection of statistical modelling, machine learning, and low-latency
       engineering, mostly in C++, Rust, and Python.
     </p>
-    <p>
+    <p data-ko="그전에는 파생상품 시장에서 강화학습 기반 주문 집행 알고리즘을 개발했습니다.">
       Before this, I focused on developing order execution algorithms based on reinforcement
       learning in derivatives markets.
     </p>
   </section>
 
   <section id="interests">
-    <h2>Research Interests</h2>
-    <p>
+    <h2 data-ko="연구 관심사">Research Interests</h2>
+    <p data-ko="복잡계에서 구조를 발견하고 활용하는 문제에 폭넓게 끌립니다. 무엇이 실제로 신호를 담고 있는지 가려내고, 그 신호를 만들어내는 동역학을 모델링하며, 불확실성과 비정상성 속에서 그 이해를 바탕으로 행동하는 일입니다. 특징 추출은 그 한 단면이고, 표현 방식의 선택 또한 마찬가지입니다. 적절한 기저나 불변량은 다루기 어렵던 문제를 다룰 수 있는 문제로 바꿔 놓습니다.">
       I am drawn to the broad problem of finding and exploiting structure in complex systems —
       identifying what genuinely carries signal, modelling the dynamics that generate it, and
       acting on that understanding under uncertainty and non-stationarity. Feature extraction is
       one facet of this; so is the choice of representation, where the right basis or invariant
       can render an otherwise intractable problem tractable.
     </p>
-    <p>
+    <p data-ko="이 실마리는 제가 가장 흥미를 느끼는 문제들을 관통합니다. 그것이 시장에서의 신호 발굴이든, 데이터로부터의 표현 학습이든, 양자 장치에서 무엇을 효율적으로 계산할 수 있는지를 규정하는 구조이든 말입니다.">
       This thread runs through the problems I find most compelling, whether they take the form
       of signal discovery in markets, learning representations from data, or the structure that
       governs what can be computed efficiently on a quantum device.
@@ -166,11 +180,11 @@
   </section>
 
   <section id="experience">
-    <h2>Experience</h2>
+    <h2 data-ko="경력">Experience</h2>
     <div class="entry">
-      <div class="h">Qraft Technologies — AI / Quant Researcher</div>
-      <div class="sub">Seoul · 2024 – present</div>
-      <div class="d">
+      <div class="h" data-ko="크래프트 테크놀로지스 — AI / 퀀트 리서처">Qraft Technologies — AI / Quant Researcher</div>
+      <div class="sub" data-ko="서울 · 2024 – 현재">Seoul · 2024 – present</div>
+      <div class="d" data-ko="한국 시장의 고빈도 ETF 차익거래를 위한 리서치와 실거래 시스템을 담당합니다. 그전에는 파생상품 시장의 Arrival Price 알고리즘을 중심으로 강화학습 기반 주문 집행을 연구했습니다.">
         Research and live systems for high-frequency ETF arbitrage in Korean markets.
         Earlier worked on reinforcement-learning–based order execution, focusing on Arrival
         Price algorithms in derivatives markets.
@@ -179,20 +193,20 @@
   </section>
 
   <section id="education">
-    <h2>Education</h2>
+    <h2 data-ko="학력">Education</h2>
     <div class="entry">
-      <div class="h">University of Oxford — MMathPhys, First Class</div>
-      <div class="sub">Mathematics and theoretical physics · 2023 – 2024</div>
-      <div class="d">Focus on quantum information.</div>
+      <div class="h" data-ko="옥스퍼드 대학교 — MMathPhys, 최우등">University of Oxford — MMathPhys, First Class</div>
+      <div class="sub" data-ko="수리·이론물리학 · 2023 – 2024">Mathematics and theoretical physics · 2023 – 2024</div>
+      <div class="d" data-ko="양자정보 전공.">Focus on quantum information.</div>
     </div>
     <div class="entry">
-      <div class="h">University of Oxford — BA Physics, First Class Honours</div>
+      <div class="h" data-ko="옥스퍼드 대학교 — 물리학 학사(BA), 최우등">University of Oxford — BA Physics, First Class Honours</div>
       <div class="sub">2020 – 2023</div>
     </div>
   </section>
 
   <section id="publications">
-    <h2>Publications</h2>
+    <h2 data-ko="논문">Publications</h2>
     <div class="entry">
       <div class="d">
         <strong>W. Hwang</strong>, B. Koczor,
@@ -221,5 +235,31 @@
   </footer>
 
 </div>
+
+<script>
+(function(){
+  var btn = document.getElementById('lang');
+  var cv = document.getElementById('cv');
+  var CV = { en: '/Wooseop_Hwang_CV.pdf', ko: '/Wooseop_Hwang_CV_KR.pdf' };
+  var nodes = document.querySelectorAll('[data-ko]');
+  nodes.forEach(function(n){ n.dataset.en = n.textContent.trim(); });
+
+  function apply(lang){
+    document.documentElement.lang = lang;
+    nodes.forEach(function(n){ n.textContent = n.dataset[lang]; });
+    cv.href = CV[lang];
+    btn.textContent = lang === 'ko' ? 'English' : '한국어';
+    try { localStorage.setItem('lang', lang); } catch(e){}
+  }
+
+  var saved;
+  try { saved = localStorage.getItem('lang'); } catch(e){}
+  apply(saved || (navigator.language.indexOf('ko') === 0 ? 'ko' : 'en'));
+
+  btn.addEventListener('click', function(){
+    apply(document.documentElement.lang === 'ko' ? 'en' : 'ko');
+  });
+})();
+</script>
 </body>
 </html>
