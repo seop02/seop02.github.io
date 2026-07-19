@@ -10,6 +10,7 @@
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{needspace}
 
 \usepackage{fontspec}
 \usepackage{kotex}
@@ -26,8 +27,8 @@
 \addtolength{\oddsidemargin}{0.0in}
 \addtolength{\evensidemargin}{0.0in}
 \addtolength{\textwidth}{0.0in}
-\addtolength{\topmargin}{0.2in}
-\addtolength{\textheight}{0.0in}
+\addtolength{\topmargin}{-0.4in}
+\addtolength{\textheight}{0.9in}
 
 \urlstyle{same}
 
@@ -45,7 +46,7 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \needspace{7\baselineskip}\vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.68\textwidth}@{\extracolsep{\fill}}r@{}}
       \textbf{#1} & #2 \\
       \textit{\small #3} & \textit{\small #4} \\
@@ -53,7 +54,7 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
-\newcommand{\resumeProject}[1]{\vspace{1pt}\item[]{\textbf{#1}}\vspace{-4pt}}
+\newcommand{\resumeProject}[1]{\needspace{4.5\baselineskip}\vspace{1pt}\item[]{\textbf{#1}}\vspace{-4pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -81,6 +82,7 @@
         {수리·이론물리학 석사 (MMathPhys)}{}
         \resumeItemListStart
           \resumeItem{First Class Honours(GPA 4.0 equivalent)}
+          \resumeItem{Master's Dissertation: \textit{Preparing Ground and Excited States Using Adiabatic CoVaR}}
         \resumeItemListEnd
     \resumeSubheading
         {옥스퍼드 대학교}{2020.10 -- 2023.06}
@@ -88,6 +90,33 @@
         \resumeItemListStart
           \resumeItem{First Class Honours(GPA 4.0 equivalent), Distinction}
         \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------논문-----------
+\section{논문}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Preparing Ground and Excited States Using Adiabatic CoVaR}{2024 -- 2025}
+      {First-author, with Prof. B\'alint Koczor (University of Oxford)}{}
+      \resumeItemListStart
+        \resumeItem{Developed a hybrid quantum-classical algorithm for preparing ground and excited eigenstates of target Hamiltonians, addressing the warm-start limitation of CoVaR via adiabatic Hamiltonian morphing. Demonstrated on three settings: ground and excited states of a spin-ring Hamiltonian; combinatorial optimization via ground-state preparation (MAX-CUT encoded as an Ising Hamiltonian); and excited states of the Schwinger model, a high-energy-physics toy model. Published in \href{https://iopscience.iop.org/article/10.1088/1367-2630/adb173}{\textbf{\textit{New Journal of Physics}} (2025)}.}
+      \resumeItemListEnd
+
+  \resumeSubheading
+    {Generalized Gaussian Temporal Difference Error for Uncertainty-aware Reinforcement Learning}{2024}
+    {Co-author, with S. Kim, J. Lee, N. Cho, S. Han (Qraft Technologies)}{}
+    \resumeItemListStart
+      \resumeItem{Proposed a generalized-Gaussian model of temporal-difference error capturing higher-order moments (kurtosis), improving the estimation of aleatoric and epistemic uncertainty in deep reinforcement learning. \href{https://arxiv.org/abs/2408.02295}{arXiv:2408.02295} (preprint).}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Quantum-Inspired Classification via Efficient Simulation of Helstrom Measurement}{2023 -- 2024}
+    {First-author, with Prof. Daniel K. Park (Yonsei), I. F. Araujo, C. Blank}{}
+    \resumeItemListStart
+      \resumeItem{Derived an efficient simulation of the Helstrom Quantum Centroid classifier for arbitrary data-copy counts, revealing that copy number is a hyperparameter rather than a monotonic improvement and enabling datasets larger than the underlying Hilbert space dimension. \href{https://arxiv.org/abs/2403.15308}{arXiv:2403.15308} (preprint).}
+    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -101,8 +130,8 @@
     \resumeItemListStart
       \resumeItem{Rust·Python 기반 시뮬레이터를 개발해 최적화된 모델 학습 환경 구축}
       \resumeItem{PPO 기반 Deep Reinforcement Learning 모델 연구}
-      \resumeItem{Hindsight Learning 기반 reward function 개발로 credit assignment 및 학습 효율 개선, 기존 대비 성능 20\% 향상}
-      \resumeItem{Model architecture 및 state encoder 개선으로 state representation 고도화, 기존 대비 15\% 향상}
+      \resumeItem{Hindsight Learning 기반 reward function 개발로 credit assignment 및 학습 효율 개선}
+      \resumeItem{Model architecture 및 state encoder 개선으로 state representation 고도화}
     \resumeItemListEnd
     \resumeProject{국내시장 차익거래 연구}
     \resumeItemListStart
@@ -113,12 +142,12 @@
   \resumeSubheading
     {Data cybernetics ssc GmbH}{2023.10 -- 2024.03}
     {연구원}{독일 · 원격 근무}
-    \resumeProject{사내 독자 Quantum State Preparation 알고리즘(Q-Alchemy)의 응용 연구}
+    \resumeProject{Quantum State Preparation 알고리즘(Q-Alchemy)의 응용 연구}
     \resumeItemListStart
-      \resumeItem{데이터를 양자 회로에 인코딩하는 상태 준비 단계를 low-rank 근사로 완화하는 기법을 여러 응용 문제에 적용}
+      \resumeItem{데이터를 양자 회로에 인코딩하는 State-preparation 단계를 low-rank 근사로 완화하는 기법을 여러 응용 문제에 적용}
       \resumeItem{QCNN — 근사 인코딩으로 회로 깊이를 크게 줄이면서도 분류 성능이 유지되는 조건 분석}
       \resumeItem{HHL — 입력 단계의 근사 오차가 문제의 조건수(condition number)에 따라 최종 해에서 얼마나 증폭되는지 분석}
-      \resumeItem{Portfolio Optimization — 수익률 공분산의 저차원 구조 덕분에 근사로 잘려 나가는 성분이 대부분 노이즈임을 확인}
+      \resumeItem{Portfolio Optimization — 수익률 공분산의 저차원(low-rank) 구조 덕분에 근사로 절삭되는 성분이 대부분 노이즈에 해당함을 확인, 해의 품질을 유지하면서 상태 준비 비용을 낮출 수 있음을 규명}
     \resumeItemListEnd
   \resumeSubheading
     {연세대학교}{2022.12 -- 2023.08}
@@ -130,55 +159,28 @@
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-
-%-----------논문-----------
-\section{논문}
-\resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Preparing Ground and Excited States Using Adiabatic CoVaR}{2024 -- 2025}
-      {First-author, with Prof. B\'alint Koczor (University of Oxford)}{Oxford, UK}
-      \resumeItemListStart
-        \resumeItem{Developed a hybrid quantum-classical algorithm for preparing ground and excited eigenstates of target Hamiltonians, addressing the warm-start limitation of CoVaR via adiabatic Hamiltonian morphing. Published in \href{https://iopscience.iop.org/article/10.1088/1367-2630/adb173}{\textit{New Journal of Physics} (2025)}.}
-      \resumeItemListEnd
-
-  \resumeSubheading
-    {Generalized Gaussian Temporal Difference Error for Uncertainty-aware Reinforcement Learning}{2024}
-    {Co-author, with S. Kim, J. Lee, N. Cho, S. Han (Qraft Technologies)}{Seoul, South Korea}
-    \resumeItemListStart
-      \resumeItem{Proposed a generalized-Gaussian model of temporal-difference error capturing higher-order moments (kurtosis), improving the estimation of aleatoric and epistemic uncertainty in deep reinforcement learning. \href{https://arxiv.org/abs/2408.02295}{arXiv:2408.02295}.}
-    \resumeItemListEnd
-
-  \resumeSubheading
-    {Quantum-Inspired Classification via Efficient Simulation of Helstrom Measurement}{2023 -- 2024}
-    {First-author, with Prof. Daniel K. Park (Yonsei), I. F. Araujo, C. Blank}{Seoul, South Korea}
-    \resumeItemListStart
-      \resumeItem{Derived an efficient simulation of the Helstrom Quantum Centroid classifier for arbitrary data-copy counts, revealing that copy number is a hyperparameter rather than a monotonic improvement and enabling datasets larger than the underlying Hilbert space dimension. \href{https://arxiv.org/abs/2403.15308}{arXiv:2403.15308}.}
-    \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 %-----------수상 및 장학-----------
 \section{수상 및 장학}
 \resumeSubHeadingListStart
   \resumeItem{\textbf{Best Student Poster Award} · Asia Quantum Information Science Conference (AQIS) \hfill 2024}
   \resumeItem{\textbf{Fitzgerald Prize} · Exeter College, University of Oxford \hfill 2021, 2024}
   \resumeItem{\textbf{East Scholarship} · Exeter College, University of Oxford \hfill 2020--2024}
-  \resumeItem{\textbf{South East Asia Mathematics Competition 1st Place} \hfill 2020}
+  \resumeItem{\textbf{Gold Medal} · South East Asia Mathematics Competition \hfill 2020}
+  \resumeItem{\textbf{Bronze Medal} · Singapore Mathematics Olympiad \hfill 2020}
 \resumeSubHeadingListEnd
 
 %-----------발표-----------
 \section{발표}
 \resumeSubHeadingListStart
-  \resumeItem{포스터 발표 · Asia Quantum Information Science Conference (AQIS), Quantum Techniques in Machine Learning (QTML) \hfill 2024}
+  \resumeItem{Poster Presentation · Asia Quantum Information Science Conference (AQIS), Quantum Techniques in Machine Learning (QTML) \hfill 2024}
 \resumeSubHeadingListEnd
 
 %-----------보유 기술-----------
 \section{보유 기술}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \item{
-     \textbf{프로그래밍} \quad Python (상급), C++ (중급), Rust (중급), \LaTeX \\
-     \textbf{전문 분야} \quad 퀀트 리서치, 머신러닝·강화학습, 양자컴퓨팅 \\
+     \textbf{프로그래밍} \quad Python (상급), C++ (중급), Rust (중급), Qiskit, PennyLane, \LaTeX \\
+     \textbf{전문 분야} \quad 양자 알고리즘, 조합 최적화, 수치해석·시뮬레이션, 머신러닝·강화학습, 퀀트 리서치 \\
      \textbf{언어} \quad 영어 (능통), 한국어 (모국어)
     }
  \end{itemize}
